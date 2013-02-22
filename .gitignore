@@ -1,0 +1,4 @@
+*.txt
+.buildpath
+.project
+.settings
