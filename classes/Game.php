@@ -69,7 +69,11 @@ class Game
 		}
 	}
 	
-	// setter
+	/**
+	 * setter - erzeugt eine neue Instanz einer Klasse
+	 * 
+	 * @param Array $array - Array mit Namen von Klassen
+	 */
 	private function setter($array)
 	{
 		$zufall = rand(0,count($array)-1);

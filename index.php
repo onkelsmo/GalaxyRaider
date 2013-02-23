@@ -24,8 +24,8 @@ $game->start();
 
 
 $theRaider = $game->getRaider();
-//$theRaider->move(3,1);
+$theRaider->move(3,1);
+
 
 dump($game);
-
 ?>
