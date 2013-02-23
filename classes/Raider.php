@@ -66,7 +66,7 @@ abstract class Raider implements I_Size, I_Position
 	}
 	
 	/**
-	 * setPosition - Setzt die aktuelle Position des Raumschiffs
+	 * setPosition - Setzt die aktuelle Position des Raiders
 	 * 
 	 * @param int $xCoord
 	 * @param int $yCoord
