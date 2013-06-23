@@ -22,7 +22,7 @@ class Game
 	public function __construct()
 	{
 		// Starten des Loggers
-		//$this->logger = new Logger();
+		$this->logger = new Logger();
 		
 		// Initialisierung des Spielfelds
 		$this->spielfeld = new Spielfeld();

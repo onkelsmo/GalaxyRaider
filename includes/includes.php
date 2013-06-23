@@ -11,6 +11,7 @@
 // Interfaces
 include 'classes/I_Size.php';
 include 'classes/I_Position.php';
+include 'classes/I_Draw.php';
 // Klassen
 include 'classes/Logger.php';
 include 'classes/Spielfeld.php';

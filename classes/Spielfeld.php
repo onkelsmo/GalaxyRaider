@@ -7,7 +7,7 @@
 * @since 01.02.2013
 *
 **/
-final class Spielfeld implements I_Size
+final class Spielfeld implements I_Size, I_Draw
 {	
 	// Eigenschaften
 	private static $arrSize;
@@ -43,6 +43,11 @@ final class Spielfeld implements I_Size
 	public static function getSize()
 	{
 		return self::$arrSize;
+	}
+	
+	public function draw()
+	{
+			
 	}
 
 }

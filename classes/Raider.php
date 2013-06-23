@@ -7,7 +7,7 @@
 * @since 01.02.2013
 *
 **/
-abstract class Raider implements I_Size, I_Position
+abstract class Raider implements I_Size, I_Position, I_Draw
 {
 	// Eigenschaften
 	protected $arrSize;
@@ -73,14 +73,9 @@ abstract class Raider implements I_Size, I_Position
 	 */
 	protected function setPosition($xCoord, $yCoord)
 	{
-		$ziel = Spielfeld::getSize();
+		$this->arrPosition = array($xCoord, $yCoord);
 		
-		if($ziel[$xCoord][$yCoord] != 'S' || $ziel[$xCoord][$yCoord] != 1)
-		{
-			$this->arrPosition = array($xCoord, $yCoord);	
-		} 
-		
-		Logger::log(LOG_RAIDER_PROMT . LOG_RAIDER_NEW_POSITION . "{$this->arrPosition[0]},{$this->arrPosition[1]}");
+		Logger::log(LOG_RAIDER_PROMT . LOG_RAIDER_NEW_POSITION . " {$this->arrPosition[0]},{$this->arrPosition[1]}");
 	}
 	
 	/**
@@ -93,23 +88,32 @@ abstract class Raider implements I_Size, I_Position
 	{
 		$ziel = Spielfeld::getSize();
 		$zielContent = $ziel[$xCoord][$yCoord];
-
+				
 		switch($zielContent)
 		{
-			case 0: 
+			case '0': 
 				// TODO: case 'ist auf dem Feld ein Event?'
 				self::setPosition($xCoord, $yCoord);
 				break;
-			case 1:
+			case '1':
+				// here is a wall
+				Logger::log(LOG_RAIDER_PROMT . LOG_RAIDER_NOWAY);
 				break;
 			case 'E':
 				self::setPosition(4, 1);
 				break;
+			case 'S':
+				// here is the start
+				Logger::log(LOG_RAIDER_PROMT . LOG_RAIDER_NOWAY);
+				break;
 			default:
 				break;
 		}
-		
-		
+	}
+	
+	public function draw()
+	{
+			
 	}
 }
 ?>

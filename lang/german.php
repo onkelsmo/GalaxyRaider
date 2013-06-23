@@ -31,6 +31,7 @@ const LOG_EVENT_POSITION 		= "Eventposition: ";
 const LOG_RAIDER_PROMT 			= "Raider: ";
 const LOG_RAIDER_SET 			= "Raider auf Startposition gesetzt";
 const LOG_RAIDER_NEW_POSITION 	= "Neue Position";
+const LOG_RAIDER_NOWAY			= "Zielposition nicht möglich.";
 
 
 ?>
