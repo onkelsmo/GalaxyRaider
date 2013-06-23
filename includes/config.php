@@ -8,4 +8,10 @@
 *
 **/
 
+/** Language setting **/
+// TODO: Better language switch
+include '/lang/german.php';
+//include '/lang/english.php';
+
+
 ?>
