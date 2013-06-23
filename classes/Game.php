@@ -22,7 +22,10 @@ class Game
 	public function __construct()
 	{
 		// Starten des Loggers
-		$this->logger = new Logger();
+		//$this->logger = new Logger();
+		
+		// Header schreiben
+		View::getHeader();
 		
 		// Initialisierung des Spielfelds
 		$this->spielfeld = new Spielfeld();
@@ -41,6 +44,13 @@ class Game
 			$this->numberOfEvents++;
 			unset($this->event);
 		}
+		
+		// Drawing the elements
+		$this->spielfeld->draw();
+		$this->raider->draw();
+		
+		// Footer schreiben
+		View::getFooter();
 	}
 	
 	// getter

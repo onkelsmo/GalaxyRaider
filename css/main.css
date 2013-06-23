@@ -1,0 +1,26 @@
+@CHARSET "ISO-8859-1";
+
+*
+{
+	padding: 0;
+	margin: 0;
+	font-family: "Arial";
+}
+
+body
+{
+	margin: 10px;
+}
+
+table.spielfeld
+{
+	border: 1px solid #DDDDDD;
+}
+
+table.spielfeld td
+{
+	border: 1px solid #DDDDDD;
+	width: 80px;
+	height: 80px;
+	text-align: center;
+}

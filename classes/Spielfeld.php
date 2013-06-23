@@ -47,7 +47,7 @@ final class Spielfeld implements I_Size, I_Draw
 	
 	public function draw()
 	{
-			
+		View::getContent(get_class($this));
 	}
 
 }

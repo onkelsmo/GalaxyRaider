@@ -16,6 +16,7 @@ include 'classes/I_Draw.php';
 include 'classes/Logger.php';
 include 'classes/Spielfeld.php';
 include 'classes/Game.php';
+include 'classes/View.php';
 // Raider
 include 'classes/Raider.php';
 include 'classes/RaiderAngriff.php';
