@@ -113,6 +113,7 @@ abstract class Raider implements I_Size, I_Position, I_Draw
 	
 	public function draw()
 	{
+		// TODO: drawing of the Raider
 		//View::getContent(get_class($this));
 	}
 }
