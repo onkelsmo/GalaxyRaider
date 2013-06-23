@@ -24,7 +24,7 @@ abstract class Raider implements I_Size, I_Position
 		$this->huelle = 5;
 		
 		Logger::log(get_class($this)." wurde erstellt.");
-		Logger::log("Raider auf Startposition gesetzt");
+		Logger::log(LOG_RAIDER_SET);
 		
 		self::setPosition(4,1);
 	}
@@ -80,7 +80,7 @@ abstract class Raider implements I_Size, I_Position
 			$this->arrPosition = array($xCoord, $yCoord);	
 		} 
 		
-		Logger::log("Raider: Neue Position {$this->arrPosition[0]},{$this->arrPosition[1]}");
+		Logger::log(LOG_RAIDER_PROMT . LOG_RAIDER_NEW_POSITION . "{$this->arrPosition[0]},{$this->arrPosition[1]}");
 	}
 	
 	/**

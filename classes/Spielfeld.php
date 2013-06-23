@@ -34,9 +34,9 @@ final class Spielfeld implements I_Size
 			array(1,'S',1,1,1)
 		);
 		
-		Logger::log("_______________________");
-		Logger::log("Spiel wird erstellt");
-		Logger::log("Spielfeld 5x5 aufgebaut");
+		Logger::log(LOG_SEPERATOR_LINE);
+		Logger::log(LOG_GAME_CREATED);
+		Logger::log(LOG_GAME_BUILD);
 	}
 	
 	// Methoden

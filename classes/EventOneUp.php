@@ -17,7 +17,7 @@ class EventOneUp extends Event
 	{
 		parent::__construct();
 		
-		Logger::log("Event: EventOneUp erzeugt");
+		Logger::log(LOG_EVENT_PROMT . EVENT_ONEUP . " erzeugt");
 	}
 	
 	// Methoden

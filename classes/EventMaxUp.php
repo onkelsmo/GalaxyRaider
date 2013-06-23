@@ -15,7 +15,7 @@ class EventMaxUp extends Event
 	{
 		parent::__construct();
 		
-		Logger::log("Event: EventMaxUp erzeugt");
+		Logger::log(LOG_EVENT_PROMT . EVENT_MAXUP . " erzeugt");
 	}
 }
 ?>

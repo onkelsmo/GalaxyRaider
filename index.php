@@ -8,6 +8,7 @@
 *
 **/
 include 'includes/includes.php';
+include 'includes/config.php';
 
 /**
  * Struktur des Spielfelds
