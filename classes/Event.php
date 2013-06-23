@@ -7,7 +7,7 @@
 * @since 01.02.2013
 *
 **/
-abstract class Event implements I_Size, I_Position
+abstract class Event implements I_Size, I_Position, I_Draw
 {
 	// Eigenschaften
 	protected $arrSize;
@@ -48,6 +48,11 @@ abstract class Event implements I_Size, I_Position
 		$xCoord = rand(1, 3);
 				
 		$this->arrPosition = array($yCoord, $xCoord);
+	}
+	
+	public function draw()
+	{
+			
 	}
 }
 ?>
