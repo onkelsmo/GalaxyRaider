@@ -19,7 +19,7 @@ class EventAngriff extends Event
 		$randomDmg = rand(0,2);
 		$this->schaden = $randomDmg;
 		
-		Logger::log("Event: EventAngriff mit {$this->schaden} erzeugt");
+		Logger::log(LOG_EVENT_PROMT . EVENT_ANGRIFF . "mit {$this->schaden} erzeugt");
 	}
 	
 	// Methoden

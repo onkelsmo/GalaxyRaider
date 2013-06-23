@@ -9,9 +9,6 @@
 **/
 class Game
 {
-	// Konstanten
-	const MAX_EVENTS = 2;
-	
 	// Eigenschaften
 	private $logger;
 	private $spielfeld;
@@ -31,14 +28,14 @@ class Game
 		$this->spielfeld = new Spielfeld();
 		
 		// Initialisierung des Raider
-		$this->raider = $this->setter(array("RaiderAngriff", "RaiderVerteidigung", "RaiderDurchschnitt"));
+		$this->raider = $this->setter(array(RAIDER_ANGRIFF, RAIDER_VERTEIDIGUNG, RAIDER_DURCHSCHNITT));
 		
 		// Initialisierung der Events
-		for($i = 0; $i < self::MAX_EVENTS; $i++)
+		for($i = 0; $i < MAX_EVENTS; $i++)
 		{
-			$this->event = $this->setter(array("EventAngriff", "EventMaxUp", "EventOneUp"));
+			$this->event = $this->setter(array(EVENT_ANGRIFF, EVENT_MAXUP, EVENT_ONEUP));
 			$event = $this->event->getPosition(); 
-			Logger::log("Eventposition: ".$event[0].",".$event[1]);
+			Logger::log(LOG_EVENT_POSITION.$event[0].",".$event[1]);
 			
 			$this->eventArray[] = $this->event;
 			$this->numberOfEvents++;
@@ -69,10 +66,12 @@ class Game
 		}
 	}
 	
+	// setter
 	/**
-	 * setter - erzeugt eine neue Instanz einer Klasse
 	 * 
-	 * @param Array $array - Array mit Namen von Klassen
+	 * setter creates a new objekt of $array
+	 * 
+	 * @param Array $array - an array of Strings
 	 */
 	private function setter($array)
 	{
@@ -88,8 +87,8 @@ class Game
 	public function start()
 	{
 		$this->started = true;
-		Logger::log("_______________________");
-		Logger::log("Spiel wurde gestartet.");
+		Logger::log(LOG_SEPERATOR_LINE);
+		Logger::log(LOG_GAME_STARTET);
 	}
 }
 ?>

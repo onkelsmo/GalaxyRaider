@@ -8,6 +8,7 @@
 *
 **/
 include 'includes/includes.php';
+include 'includes/config.php';
 
 /**
  * Struktur des Spielfelds
@@ -24,8 +25,8 @@ $game->start();
 
 
 $theRaider = $game->getRaider();
-$theRaider->move(3,1);
-
+//$theRaider->move(3,1);
 
 dump($game);
+
 ?>

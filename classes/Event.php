@@ -21,17 +21,17 @@ abstract class Event implements I_Size, I_Position
 		self::setPosition();
 	}
 	
-	// getter
+	// Methoden
 	public static function getSize()
 	{
 		return $this->arrSize;
 	}
+	
 	public function getPosition()
 	{
 		return $this->arrPosition;
 	}
 	
-	// Methoden
 	/**
 	 * Struktur des Spielfelds
 	 *
