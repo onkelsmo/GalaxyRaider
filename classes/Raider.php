@@ -74,12 +74,8 @@ abstract class Raider implements I_Size, I_Position, I_Draw
 	protected function setPosition($xCoord, $yCoord)
 	{
 		$this->arrPosition = array($xCoord, $yCoord);
-		
-<<<<<<< HEAD
-		Logger::log(LOG_RAIDER_PROMT . LOG_RAIDER_NEW_POSITION . "{$this->arrPosition[0]},{$this->arrPosition[1]}");
-=======
+
 		Logger::log(LOG_RAIDER_PROMT . LOG_RAIDER_NEW_POSITION . " {$this->arrPosition[0]},{$this->arrPosition[1]}");
->>>>>>> adjust_move_method
 	}
 	
 	/**
