@@ -1,7 +1,7 @@
 <?php
 /**
 *
-* RaiderDurchschnitt bezeichnet einen Raider mit mittelmaeßiger Angriff und Verteidigung
+* RaiderDurchschnitt bezeichnet einen Raider mit mittelmaeÃŸiger Angriff und Verteidigung
 *
 * @author SmO
 * @since 01.02.2013
