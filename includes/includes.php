@@ -27,6 +27,8 @@ include 'classes/Event.php';
 include 'classes/EventAngriff.php';
 include 'classes/EventOneUp.php';
 include 'classes/EventMaxUp.php';
+// TemplateLoader
+include 'templates/ContentLoader.php';
 
 /**
  * For Debuggin

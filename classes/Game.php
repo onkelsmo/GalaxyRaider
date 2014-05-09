@@ -46,8 +46,8 @@ class Game
 		}
 		
 		// Drawing the elements
-		$this->spielfeld->draw();
-		$this->raider->draw();
+		$this->spielfeld->draw($this->raider);
+		//$this->raider->draw();
 		
 		// Footer schreiben
 		View::getFooter();

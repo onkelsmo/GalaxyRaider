@@ -30,10 +30,9 @@ class View
 	 * 
 	 * @param String $content
 	 */
-	static function getContent($content)
+	static function getContent(ContentLoader $content, $raider = null)
 	{
-		$content = strtolower($content);
-		echo file_get_contents("templates/" . $content . ".php");
+            $content->run();
 	}
 }
 
