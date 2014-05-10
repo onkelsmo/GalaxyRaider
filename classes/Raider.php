@@ -92,29 +92,28 @@ abstract class Raider implements I_Size, I_Position, I_Draw
 		switch($zielContent)
 		{
 			case '0': 
-				// TODO: case 'ist auf dem Feld ein Event?'
-				self::setPosition($xCoord, $yCoord);
-				break;
+                            // TODO: case 'ist auf dem Feld ein Event?'
+                            self::setPosition($xCoord, $yCoord);
+                            break;
 			case '1':
-				// here is a wall
-				Logger::log(LOG_RAIDER_PROMT . LOG_RAIDER_NOWAY);
-				break;
+                            // here is a wall
+                            Logger::log(LOG_RAIDER_PROMT . LOG_RAIDER_NOWAY);
+                            break;
 			case 'E':
-				self::setPosition(4, 1);
-				break;
+                            self::setPosition(4, 1);
+                            break;
 			case 'S':
-				// here is the start
-				Logger::log(LOG_RAIDER_PROMT . LOG_RAIDER_NOWAY);
-				break;
+                            // here is the start
+                            Logger::log(LOG_RAIDER_PROMT . LOG_RAIDER_NOWAY);
+                            break;
 			default:
-				break;
+                            break;
 		}
 	}
 	
 	public function draw()
 	{
-		// TODO: drawing of the Raider
-		//View::getContent(get_class($this));
+            
 	}
 }
 ?>

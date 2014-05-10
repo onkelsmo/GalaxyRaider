@@ -23,10 +23,9 @@ include 'includes/config.php';
 $game = new Game();
 $game->start();
 
-
-$theRaider = $game->getRaider();
-$theRaider->move(3,1);
-$theRaider->move(3,2);
+//$theRaider = $game->getRaider();
+//$theRaider->move(3,1);
+//$theRaider->move(3,2);
 
 //dump($game);
 

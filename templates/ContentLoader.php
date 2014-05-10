@@ -22,30 +22,20 @@ class ContentLoader {
             $this->actualEventPositions[] = $event->getPosition();
         }
         
-        var_dump($this->actualEventPositions);
-                
+        // Setting the positions of events and raider in map array
+        foreach ($this->actualEventPositions as $eventPosition) {
+            $this->map[$eventPosition[0]][$eventPosition[1]] = 'Ev';
+        }
+        $this->map[$this->actualRaiderPosition[0]][$this->actualRaiderPosition[1]] = 'R';
+               
         echo "<table class=\"spielfeld\">";
         for ($i = 0; $i <= 4; $i++) {
             echo '<tr>';
             for ($j = 0; $j <= 4; $j++) {
-                if ($i == $this->actualRaiderPosition[0] && $j == $this->actualRaiderPosition[1]) {
-                    echo "<td>R</td>";
-                    //TODO: draw all given events
-                } elseif ($i == $this->actualEventPositions[0][0] && $j == $this->actualEventPositions[0][1]) {
-                    echo "<td>Ev</td>";
-                } else {
-                    echo "<td>{$this->map[$i][$j]}</td>";
-                }
+                echo "<td>{$this->map[$i][$j]}</td>";
             }
             echo '</tr>';
         }
         echo "</table>";
-    }
-    
-    /**
-     * TODO
-     */
-    public function updateMap() {
-        //
     }
 }
