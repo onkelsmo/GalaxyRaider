@@ -48,9 +48,9 @@ final class Spielfeld implements I_Size, I_Draw
 		return self::$arrSize;
 	}
 	
-	public function draw(Raider $raider = null)
+	public function draw(Raider $raider = null, $eventArray = null)
 	{
-            View::getContent($this->contentLoader, $raider);
+            View::getContent($this->contentLoader, $raider, $eventArray);
 	}
 
 }

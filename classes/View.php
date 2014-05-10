@@ -30,9 +30,9 @@ class View
 	 * 
 	 * @param String $content
 	 */
-	static function getContent(ContentLoader $content, $raider = null)
+	static function getContent(ContentLoader $content, Raider $raider = null, $eventArray = null)
 	{
-            $content->run();
+            $content->run($raider, $eventArray);
 	}
 }
 
