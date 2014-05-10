@@ -22,7 +22,6 @@ class ContentLoader {
             $this->actualEventPositions[] = $event->getPosition();
         }
         
-        
         var_dump($this->actualEventPositions);
                 
         echo "<table class=\"spielfeld\">";
@@ -31,6 +30,9 @@ class ContentLoader {
             for ($j = 0; $j <= 4; $j++) {
                 if ($i == $this->actualRaiderPosition[0] && $j == $this->actualRaiderPosition[1]) {
                     echo "<td>R</td>";
+                    //TODO: draw all given events
+                } elseif ($i == $this->actualEventPositions[0][0] && $j == $this->actualEventPositions[0][1]) {
+                    echo "<td>Ev</td>";
                 } else {
                     echo "<td>{$this->map[$i][$j]}</td>";
                 }
