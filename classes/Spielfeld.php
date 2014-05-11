@@ -35,7 +35,6 @@ final class Spielfeld implements I_Size, I_Draw
 			array(1,0,0,0,1),
 			array(1,'S',1,1,1)
 		);
-		$this->contentLoader = new ContentLoader($this);
                 
 		Logger::log(LOG_SEPERATOR_LINE);
 		Logger::log(LOG_GAME_CREATED);
@@ -48,9 +47,8 @@ final class Spielfeld implements I_Size, I_Draw
 		return self::$arrSize;
 	}
 	
-	public function draw(Raider $raider = null, $eventArray = null)
+	public function draw()
 	{
-            View::getContent($this->contentLoader, $raider, $eventArray);
 	}
 
 }

@@ -32,8 +32,7 @@ class View
 	 */
 	static function getContent(Spielfeld $spielfeld, Raider $raider = null, $eventArray = null)
 	{
-            $contentLoader = new ContentLoader($spielfeld);
-            $contentLoader->run($raider, $eventArray);
+            ContentLoader::run($spielfeld, $raider, $eventArray);
 	}
 }
 
