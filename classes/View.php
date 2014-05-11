@@ -30,9 +30,10 @@ class View
 	 * 
 	 * @param String $content
 	 */
-	static function getContent(ContentLoader $content, Raider $raider = null, $eventArray = null)
+	static function getContent(Spielfeld $spielfeld, Raider $raider = null, $eventArray = null)
 	{
-            $content->run($raider, $eventArray);
+            $contentLoader = new ContentLoader($spielfeld);
+            $contentLoader->run($raider, $eventArray);
 	}
 }
 
